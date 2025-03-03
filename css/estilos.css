@@ -65,15 +65,8 @@ p {
 
 
 /*valores generales*/
-h1{
-    font-family: "Lato", serif;
-    font-size: 2.5rem;
-    color: rgb(24, 24, 24);
-    margin-bottom: 40px;
-    padding-top: 20px;
-    text-align: center;
 
-}
+
 h2{
     font-size: 2rem;
     color: rgb(32, 32, 32);
@@ -99,7 +92,7 @@ h2{
         border-radius: 15px;
         &:hover{
             border: 1px solid rgb(0, 0, 0);
-            background-color: #000000;
+            background-color:rgb(214, 182, 75);
             color: white;
         }
 }
@@ -107,77 +100,12 @@ h2{
     color: #bab5a3;
 }
 
-/*estilos del HEADER*/
-header, footer {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    ul{
-        list-style: none
-        a{
-            color: black;
-            text-decoration: none;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
- }
 
 
 
 
 
-header{
-    background-color:white ;
-    grid-area: header;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    img{
-        width: 40px
-    }
-    nav{
-        background-color: white;
-        ul{
-            list-style: none;
-            display: flex;
-            li{
-                margin-right: 24px;
-                a{
-                    color: #000000;
-                    text-decoration: none;
-                }
-            }
-
-         }
-    }
-}
-
-h3, i,p{
-    color:  #343434;
-    
-}
-i{
-    font-size: 2rem;
-}
-h3{
-    margin-bottom: 10px;
-}
-/*footer*/
-footer {
-    display: grid;
-    grid-template-columns: 1fr; /* Una sola columna para apilar los elementos */
-    grid-template-rows: auto auto; /* Dos filas: una para el newsletter y otra para el resto */
-    gap: 20px;
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #000000;
-    color: white;
-}
-
-/* Sección del Newsletter */
+* Sección del Newsletter 
 .footer-newsletter {
     background-color: #000000; /* Un color ligeramente diferente para destacar */
     padding: 20px;
@@ -198,14 +126,15 @@ footer {
 }
 
 .footer-newsletter input[type="submit"] {
-    background-color: #ffd700;
+    background-color: rgb(214, 182, 75);
+    ;
     color: black;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .footer-newsletter input[type="submit"]:hover {
-    background-color: #ffcc00;
+    background-color: rgb(214, 182, 75);
 }
 
 /* Contenedor para el resto del footer */
@@ -215,120 +144,20 @@ footer {
     gap: 20px;
     text-align: left;
     padding-top: 20px;
-}
-
-/* Estilos generales */
-footer img {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    margin: 8px 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #ffd700;
-}
-
-/* Línea divisoria */
-footer hr {
-    border: none;
-    height: 1px;
-    background-color: white;
-    margin: 20px 0;
-}
-
-/* Copyright */
-.footer-copy {
-    text-align: center;
-    font-size: 14px;
-}
-
-  
-
-
-
-
-
-.fa-whatsapp{
-    color: #25d366;
-    font-size: 3rem;
-    position: fixed;
-    right:20px;
-    bottom: 30px;
-}
-
-.seccionprincipalIndex{
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    width: 100%;
-    padding: 10px;
-    background-color: #ffffff; 
-    background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url("../assets/img/portada-turismo.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    .seccionprincipalIndex h1 {
-            font-size: 2rem;
-            color: rgb(0, 0, 0);
-        }
-    
-    
-    p{ color: rgb(255, 255, 255);
-    }
-    a{
-       margin-top: 30px;
-    }
-
-    
-}
-    
-
-
-/*Estilos paginas Nosotros*/
-.sobre-nosotros{
-    padding: 10px;
-    text-align: center;
-    .parrafoNosotros {
-        flex: 1;
-        text-align: justify;
-        max-width: 600px;
-    }
-        p{
-            margin-bottom: 15px;
-        }
-    }
-    .ImagenfondoNosotros{
-        display: inline-block;
-        background-image: url("../assets/img/nosotros.jpg");
-        background-position: center;
-        background-size: cover;
-        height: 60vh;
-        width: 48%;
-    }
-
+}/*
 
 
 
 .vivituExperienciaIndex{
     display: flex;
     gap: 20px; /* Espacio entre las secciones */
-    justify-content: space-between;
-    flex-wrap: nowrap;    
-    width: 100%;
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;    
+        width: 100%;
+    }
+    
     .travel, .gastronomiaRegionalindex, .showexperienciaIndex, .vivipatagoniaIndex{
             /*propiedad para poner un blur al div*/
         margin-top: 30px;    
@@ -360,7 +189,7 @@ footer hr {
         background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.667)), url("../assets/img/patagoniaaa.jpg");
     }
 
-}
+
 .Sucursalesindex{
     height: 95vh;
     text-align: center;
@@ -390,23 +219,7 @@ footer hr {
     }
 
 }
-.clientesIndex {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
 
-.clientesIndex div {
-    flex: 1 1 150px; /* Se ajusta automáticamente */
-    text-align: center;
-}
-
-.clientesIndex img {
-    width: 100px;
-    max-width: 100%;
-}
 
 
 
@@ -420,18 +233,6 @@ footer hr {
 }
 
 
-/* 🖼 Asignando tamaños específicos a cada imagen */
-.item1 { grid-column: span 1; grid-row: span 2; } /* Alta */
-.item2 { grid-column: span 1; grid-row: span 1; } /* Pequeña */
-.item3 { grid-column: span 1; grid-row: span 2; } /* Alta */
-.item4 { grid-column: span 1; grid-row: span 1; } /* Pequeña */
-.item5 { grid-column: span 2; grid-row: span 2; } /* Ancha y alta */
-.item6 { grid-column: span 1; grid-row: span 2; } /* Alta */
-.item7 { grid-column: span 3; grid-row: span 1; } /* Muy ancha */
-.item8, .item9 {
-    grid-column: span 1; /* Cada imagen ocupa la mitad del ancho total */
-    grid-row: span 1; /* Mantienen su altura original */
-}
 
 /* 🏷 Estilo para los títulos dentro de cada imagen */
 .galeria h2 {
@@ -533,3 +334,11 @@ footer hr {
     background-color: #ffffff; /* Color suave de fondo */
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos responsivos aquí */
+}
+
+    /* Para dispositivos móviles */
+   

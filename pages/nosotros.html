@@ -1,100 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nosotros | Turismo Argentina </title>
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/estilos.css">
-        <script src="https://kit.fontawesome.com/93bb252cb1.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Turismo Argentina</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/93bb252cb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-    </head>
-    <body>
-        <header>
-            <a href="../index.html">
-                <img src="../assets/img/logo_argentina.png" alt="Logo de Argentina, la bandera con un sol en el medio" width="40px">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="galerias.html">Galerías</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <section class="sobre-nosotros">
-                <h1 class="tituloprincipal">Sobre Nosotros</h1>
-                <div class="parrafoNosotros">
-                    <p>
-                        Somos una agencia de turismo especializada en brindar experiencias únicas y aventuras inolvidables en los destinos más increíbles de Argentina. Desde paisajes majestuosos hasta actividades llenas de adrenalina, diseñamos cada recorrido para que vivas la esencia del país de una manera auténtica y emocionante.
-                    </p>
-                    <p>
-                        Nuestro compromiso es ofrecer un servicio de calidad, con guías expertos y propuestas personalizadas que se adaptan a cada viajero. Ya sea que busques explorar montañas, recorrer viñedos o sumergirte en la cultura local, estamos aquí para hacer de tu viaje una experiencia inolvidable.
-                    </p>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../assets/img/logo_argentina.png" alt="Logo Argentina" width="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link " href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link " href="galerias.html">Galerias</a></li>
+                        <li class="nav-item"><a class="nav-link " href="sucursales.html">Sucursales</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        
+                    </ul>
                 </div>
-                <div class="ImagenfondoNosotros"></div>
-            </section>
-        </main>
-        <section id="un-viaje-por-argentina">
-            <h2>Un viaje por Argentina</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/f6QFJUkORmQ?si=j7u6Dv9Z4a4F79O8&amp;controls=0&amp;start=31" 
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Nosotros -->
+    <main class="container my-5 pt-5">
+        <section class="text-center">
+            <h1 class="display-4 fw-bold text-primary text-black text-center">Sobre Nosotros</h1>
+            <p class="lead text-black">Somos una agencia de turismo especializada en brindar experiencias únicas y aventuras inolvidables en los destinos más increíbles de Argentina.</p>
+        </section>
+
+        <section class="row align-items-center mt-5">
+            <div class="col-md-6">
+                <p>
+                    Desde paisajes majestuosos hasta actividades llenas de adrenalina, diseñamos cada recorrido para que vivas la esencia del país de una manera auténtica y emocionante.
+                </p>
+                <p>
+                    Nuestro compromiso es ofrecer un servicio de calidad, con guías expertos y propuestas personalizadas que se adaptan a cada viajero.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="../assets/img/nosotros.jpg" alt="Turismo en Argentina" class="img-fluid rounded shadow">
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección Video -->
+    <section id="un-viaje-por-argentina" class="text-center bg-light py-5">
+        <h2 class="fw-bold text-primary">Un viaje por Argentina</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f6QFJUkORmQ?si=j7u6Dv9Z4a4F79O8&amp;controls=0&amp;start=31" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-        <div>
-                    <footer>
-                        <!-- Sección Newsletter -->
-                        <div class="footer-newsletter">
-                            <h3>Suscríbete a nuestro Newsletter</h3>
-                            <form action="">
-                                <input type="email" placeholder="Email" id="emailSuscripcion">
-                                <input type="submit" value="Suscribirme" id="suscribirme">
-                            </form>
-                        </div>
-                    
-                        <!-- Contenido principal del footer -->
-                        <div class="footer-content">
-                            <div>
-                                <h3>Contenidos</h3>
-                                <ul>
-                                    <li><a href="../index.html">Inicio</a></li>
-                                    <li><a href="./pages/galerias.html">Galería</a></li>
-                                    <li><a href="./nosotros.html">Nosotros</a></li>
-                                    <li><a href="./contacto.html">Contacto</a></li>
-                                    <li><a href="./sucursales.html">Sucursales</a></li>
-                                </ul>
-                            </div>
-                    
-                            <div>
-                                <h3>¿Necesitas Ayuda?</h3>
-                                <ul>
-                                    <li><a href="../index.html">Inicio</a></li>
-                                    <li><a href="./pages/galerias.html">Galería</a></li>
-                                    <li><a href="./nosotros.html">Nosotros</a></li>
-                                    <li><a href="./contacto.html">Contacto</a></li>
-                                    <li><a href="./sucursales.html">Sucursales</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Conéctate con nosotros</h3>
-                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- Copyright -->
-                        <p class="footer-copy">
-                            Copyright © 2025 Turismo Argentina. All rights reserved. <br>
-                            Privacy Policy | Terms of Use
-                        </p>
-                    </footer>
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="mt-4">
+        </iframe>
+    </section>
+
+<!-- Newsletter -->
+<section class="py-5 bg-black text-white">
+    <div class="container text-center">
+        <h3 class="mb-3 fw-bold">Suscríbete a nuestro Newsletter</h3>
+        <p class="mb-3">Recibirá noticias y promociones de nuestras aventuras y eventos.</p>
+        <form class="row justify-content-center g-2">
+            <div class="col-md-4 col-8">
+                <input type="email" class="form-control p-2" placeholder="Ingresa tu email" required>
+            </div>
+            <div class="col-md-2 col-4">
+                <button type="submit" class="btn btn-warning w-100 fw-bold">Registrarme</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black text-white py-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Descripción -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Turismo.AR</h5>
+                    <p>Descubre los secretos mejor guardados del país.</p>
+                </div>
+                <!-- Contacto -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contáctanos</h5>
+                    <p>Email: <a href="mailto:argentina@gmail.com" class="text-white">argentina@gmail.com</a></p>
+                    <p>Dirección: Av. Dorrego, Argentina</p>
+                    <p>Tel: +54 11 09872</p>
+                </div>
+                <!-- Redes sociales -->
+                <div class="col-md-4 text-md-end text-center">
+                    <h5 class="fw-bold">Nuestras Redes</h5>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3 fs-4" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-4" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p class="mb-0">© 2025 Turismo.AR | <a href="#" 
+
+
+                        
            
-        </div>
+
         
         

@@ -2,61 +2,92 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Turismo | Argentina</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Argentina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/93bb252cb1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+            
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-light shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"> LOGO</a>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/logo_argentina.png" alt="Logo Argentina" width="40">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto w-100 justify-content-center"style="background-color: dark;">
-                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Galerias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sucursales</a></li>
+                    <ul class="navbar-nav ms-auto w-100 justify-content-center">
+                        <li class="nav-item"><a class="nav-link active text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./pages/galerias.html">Galerias</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./pages/nosotros.html">Nosotros</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Imagen de portada -->
-        <div class="container-fluid p-0">
-            <img src="../Clase_01/assets/img/portada-turismo.jpg" alt="Turismo en Argentina" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
-            
+    </header>
+    
+    <section class="hero position-relative vh-100">
+        <div class="hero-overlay"></div> <!-- Oscurecimiento de la imagen -->
+        <img src="./assets/img/portada-turismo.jpg" class="img-fluid w-100 h-100 object-fit-cover position-absolute top-0 start-0" alt="Paisaje de Argentina">
+        
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white bg-dark bg-opacity-50 p-4 rounded">
+            <h1 class="fw-bold">Explora la belleza de Argentina</h1>
+            <p>Descubre los mejores destinos turísticos del país</p>
+            <a href="./pages/contacto.html" class="btn btn-dark fw-bold"> CONTACTANOS</a>
         </div>
-    </header>
-
-
-    </header>
-
-    <main>
-        <!-- Sección Hero con Parallax -->
-        <section class="hero-section text-center text-white d-flex align-items-center">
-            <div class="container">
-                <h1 class="fw-bold">DESCUBRE LA MAGIA DE ARGENTINA</h1>
-                <p class="lead">Viajá por Argentina y viví aventuras que te transforman</p>
-                <a class="btn btn-light btn-lg mt-3" href="./pages/contacto.html#contacto">CONTACTANOS</a>
-            </div>
-        </section>
-    </main>
+    </section>
+    
+    <!-- CSS adicional -->
+    <style>
+        .hero {
+            position: relative;
+        }
+    
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.159); /* Oscurecimiento de la imagen */
+            z-index: 1;
+        }
+    
+        .hero img {
+            z-index: 0;
+        }
+    
+        .navbar-nav .nav-link {
+            font-weight: bold;
+        }
+        
+    </style>
+    
+    
+    
+    
+    
     
 
      <!-- Sección de experiencias -->
-<section class="container my-5">
-    <h2 class="text-center fw-bold mb-4">Elegí tu experiencia</h2>
+<section class=" Experiencias container my-5">
+    <div style="height: auto; padding: 3rem;">
+        <h2 class="text-center fw-bold mb-4 ">Elegí tu experiencia</h2>
     <p class="text-center text-muted">Descubrí las mejores actividades y excursiones en Argentina. Viví experiencias únicas en cada destino.</p>
+    </div>
 
     <div class="row g-4">
         <!-- Card 1 -->
@@ -66,7 +97,7 @@
                 <div class="card-body">
                     <h5 class="fw-bold">Cabalgata al Atardecer</h5>
                     <p class="text-muted">Entre viñedos, montañas y aventuras en la Cordillera de los Andes.</p>
-                    <a class="btn btn-primary w-100" href="./pages/nosotros.html#UnviajeporArgentina">VER</a>
+                    
                 </div>
             </div>
         </div>
@@ -78,7 +109,7 @@
                 <div class="card-body">
                     <h5 class="fw-bold">Tour Gastronómico</h5>
                     <p class="text-muted">Sabores únicos y delicias regionales en cada rincón del país.</p>
-                    <a class="btn btn-primary w-100" href="./pages/galerias.html#tourGastronomico">VER</a>
+                  
                 </div>
             </div>
         </div>
@@ -90,7 +121,7 @@
                 <div class="card-body">
                     <h5 class="fw-bold">Show de Tango</h5>
                     <p class="text-muted">Disfrutá música en vivo y un baile apasionado en Buenos Aires.</p>
-                    <a class="btn btn-primary w-100" href="./pages/galerias.html#tangoShow">VER</a>
+                    
                 </div>
             </div>
         </div>
@@ -102,7 +133,7 @@
                 <div class="card-body">
                     <h5 class="fw-bold">Excursiones en El Chaltén</h5>
                     <p class="text-muted">Explorá la Patagonia entre glaciares, lagos y paisajes inolvidables.</p>
-                    <a class="btn btn-primary w-100" href="./pages/galerias.html#excursiones">VER</a>
+                    
                 </div>
             </div>
         </div>
@@ -115,53 +146,119 @@
         transition: all 0.3s ease-in-out;
     }
 </style>
+            <!-- Video -->
+<section class="text-center my-5 py-5 bg-light rounded">
+    <div class="container">
+        <h2 class="mb-4">Un recorrido por Argentina</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="ratio ratio-16x9 rounded shadow">
+                    <iframe 
+                        src="https://www.youtube.com/embed/f6QFJUkORmQ?start=31" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Estilo Adicional-->
+<style>
+    .ratio iframe {
+        border-radius: 20px; /* Bordes redondeados */
+    }
+</style>
+
+   
+        <section class="container my-5">
+            <div class="row d-flex align-items-center fade-in" style="height: 600px;">
+                <!-- Texto alineado a la izquierda -->
+                <div class="col-md-4 fade-in">
+                    <h2 class="mb-4">Nuestros viajeros</h2>
+                    <p class="text-muted">Descubre las increíbles experiencias de quienes han viajado con nosotros. Sus testimonios reflejan la calidad y el compromiso que brindamos en cada aventura.</p>
+                </div>
         
-  
-        <!-- Video -->
-        <section class="text-center my-5" style="height: 400px;">
-            <h2>Un recorrido por Argentina</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/f6QFJUkORmQ?start=31" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-         <!-- Sección de testimonios -->
-         <section class="container my-5" style="height: 400px;">
-            <h2 class="text-center mb-4">Lo que dicen nuestros viajeros</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm p-3">
-                        <img src="./assets/img/clientes.abuelos.jpg" class="rounded-circle mx-auto d-block" width="80" height="80" alt="Cliente 1">
-                        <h4 class="mt-3">Ana Boston</h4>
-                        <p class="text-muted">"¡Cada viaje con su agencia ha sido increíble!"</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm p-3">
-                        <img src="./assets/img/cliente.jpg" class="rounded-circle mx-auto d-block" width="80" height="80" alt="Cliente 2">
-                        <h4 class="mt-3">Maria Ramirez</h4>
-                        <p class="text-muted">"Hermoso país, todo ha sido increíble. ¡Volveré!"</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm p-3">
-                        <img src="./assets/img/front-view-smiley-man-posing-cv.jpg" class="rounded-circle mx-auto d-block" width="80" height="80" alt="Cliente 3">
-                        <h4 class="mt-3">Juan Pérez</h4>
-                        <p class="text-muted">"La mejor experiencia de mi vida. Muy recomendable."</p>
+                <!-- Contenedor de Cards en una sola fila -->
+                <div class="col-md-8">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-4 fade-in" style="animation-delay: 0.2s;">
+                            <div class="card border-0 shadow-sm text-center p-3 bg-light">
+                                <img src="./assets/img/clientes.abuelos.jpg" class="rounded-circle mx-auto d-block" width="80" height="80" alt="Cliente 1">
+                                <h4 class="mt-3">Ana Boston</h4>
+                                <p class="text-muted">"¡Cada viaje con su agencia ha sido increíble!"</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 fade-in" style="animation-delay: 0.4s;">
+                            <div class="card border-0 shadow-sm text-center p-3 bg-light">
+                                <img src="./assets/img/cliente.jpg" class="rounded-circle mx-auto d-block" width="80" height="80" alt="Cliente 2">
+                                <h4 class="mt-3">Maria Ramirez</h4>
+                                <p class="text-muted">"Hermoso país, todo ha sido increíble. ¡Volveré!"</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 fade-in" style="animation-delay: 0.6s;">
+                            <div class="card border-0 shadow-sm text-center p-3 bg-light">
+                                <img src="./assets/img/front-view-smiley-man-posing-cv.jpg" class="rounded-circle mx-auto d-block" width="80" height="80" alt="Cliente 3">
+                                <h4 class="mt-3">Juan Pérez</h4>
+                                <p class="text-muted">"La mejor experiencia de mi vida. Muy recomendable."</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+
+
+
+        
+    <section class="bg-black text-white py-4">
         <div class="container text-center">
-            <h3>Suscríbete a nuestro Newsletter</h3>
-            <form class="d-flex justify-content-center">
-                <input type="email" class="form-control w-25 me-2" placeholder="Email">
-                <button class="btn btn-primary">Suscribirme</button>
+            <h3 class="mb-3 fw-bold">Suscríbete a nuestro Newsletter</h3>
+            <p class="mb-3">Recibirás noticias y promociones de nuestras aventuras y eventos.</p>
+            <form class="row justify-content-center g-2">
+                <div class="col-md-4 col-8">
+                    <input type="email" class="form-control p-2" placeholder="Ingresa tu email" required>
+                </div>
+                <div class="col-md-2 col-4">
+                    <button type="submit" class="btn btn-warning w-100 fw-bold">Registrarme</button>
+                </div>
             </form>
-            <p class="mt-3">© 2025 Turismo Argentina. Todos los derechos reservados.</p>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Turismo.AR</h5>
+                    <p>Descubre los secretos mejor guardados del país.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contáctanos</h5>
+                    <p>Email: <a href="mailto:argentina@gmail.com" class="text-white text-decoration-none">argentina@gmail.com</a></p>
+                    <p>Dirección: Av. Dorrego, Argentina</p>
+                    <p>Tel: <a href="tel:+541112345678" class="text-white text-decoration-none">+54 11 1234-5678</a></p>
+                </div>
+                <div class="col-md-4 text-md-end text-center">
+                    <h5 class="fw-bold">Nuestras Redes</h5>
+                    <div class="mt-3 d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white me-3 fs-4" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-4" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3 fs-4" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">© 2025 Turismo.AR | 
+                    <a href="#" class="text-white text-decoration-none">Política de Privacidad</a> | 
+                    <a href="#" class="text-white text-decoration-none">Términos de Uso</a>
+                </p>
+            </div>
         </div>
     </footer>
 
