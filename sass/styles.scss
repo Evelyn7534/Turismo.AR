@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    
+/* Reset de estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Lato", serif;
+    font-size: 16px;
+    
+    padding: 15px;
+}
+
+    
+h1{
+    font-family:"Montserrat", serif;
+     text-align: center;
+    }
+h2{ 
+    text-align: center;   
+} 
+
+
+.tituloprincipal{
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight:200px;
+    color: black;
+}
+.parrafoPrincipal{
+    margin-top: 80px;
+    font-size:24px;
+    text-align: center;
+    font-weight: 400px;
+    color: rgb(255, 255, 255);
+    
+}
+.titulosecundario { 
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500px;
+    color: black;
+}
+
+ 
+.sobre-nosotros{
+    text-align: center;
+    font-weight: 300;
+}
+
+p {
+    font-size: 16px;
+    color: #dedddd;
+}
+
+
+/*valores generales*/
+
+
+h2{
+    font-size: 2rem;
+    color: rgb(32, 32, 32);
+    margin-top: 36px;
+    margin-bottom: 30px;
+    text-align: center
+}
+.mayuscula{
+    text-transform: uppercase;
+}
+.negrita{
+    font-weight: bold;
+}
+.thin{
+    font-weight: 200;
+}
+.boton{
+        padding: 10px;
+        text-decoration: none;
+        display: inline-block;
+        color: #ffffff;
+        border: 1px solid white;
+        border-radius: 15px;
+        &:hover{
+            border: 1px solid rgb(0, 0, 0);
+            background-color:rgb(214, 182, 75);
+            color: white;
+        }
+}
+.colorcrema{
+    color: #bab5a3;
+}
+
+
+
+
+
+
+* Sección del Newsletter 
+.footer-newsletter {
+    background-color: #000000; /* Un color ligeramente diferente para destacar */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer-newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    margin: 5px 0;
+}
+
+.footer-newsletter input[type="submit"] {
+    background-color: rgb(214, 182, 75);
+    ;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-newsletter input[type="submit"]:hover {
+    background-color: rgb(214, 182, 75);
+}
+
+/* Contenedor para el resto del footer */
+footer {
+    background-color: #1a2e35; /* Verde oscuro */
+    /* O puedes usar: */
+    /* background-color: #0d1b2a; */ /* Azul oscuro */
+    color: white;
+    padding: 40px 0;
+}
+
+
+
+.vivituExperienciaIndex{
+    display: flex;
+    gap: 20px; /* Espacio entre las secciones */
+}
+    
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;    
+        width: 100%;
+    }
+    
+    .travel, .gastronomiaRegionalindex, .showexperienciaIndex, .vivipatagoniaIndex{
+            /*propiedad para poner un blur al div*/
+        margin-top: 30px;    
+        margin-bottom: 50px;
+        text-align: center;
+        padding: 20px;
+        width: 25%;
+        height: 290px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.667)), url("../assets/img/mendoza.jpg");
+        background-position: center;
+        background-size: cover;
+        backdrop-filter: blur(5px);
+        filter: grayscale(10%);
+        color: #fff;
+        h2{
+            font-size: 24px;
+            color: #e8e6e3;
+        }
+
+    }
+ 
+
+
+.Sucursalesindex{
+    height: 95vh;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.667)), url("../assets/img/couple-5267726_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    /*centrar verticalmente desde el padre*/
+    .Sucursalesindex {
+        display: grid;
+        place-content: center;
+    }
+     /*esto es superior a flexbox y es nuevo*/
+    h2{
+        color: #fff;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    .colorcrema{
+        color: #e4e2dd;
+        font-size: 3rem;
+    }
+
+}
+
+
+
+
+.card {
+    height: 100%; /* Todas las tarjetas con la misma altura */
+}
+
+.card img {
+    height: 250px; /* Tamaño uniforme para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+
+
+/* 🏷 Estilo para los títulos dentro de cada imagen */
+.galeria h2 {
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding:10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.contacto{
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        margin: 0;
+    }
+    
+    .contacto-container {
+        text-align: center;
+        width: 50%;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    input, textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    .botones {
+        margin-top: 10px;
+    }
+    
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    
+    .btn-enviar {
+        background-color: #28a745;
+        color: white;
+    }
+    
+    .btn-limpiar {
+        background-color: #dc3545;
+        color: white;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+    
+}
+
+
+.seccionprincipalIndex, 
+    section {
+    display: grid;
+    place-items: center; /* Centrar contenido */
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff; /* Color suave de fondo */
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos responsivos aquí */
+}
+
+  /*SECCION EXPERIENCIAS*/
+  .card {
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+
+    
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+ /* Estilos para la barra de navegación */
+ 
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0) !important; /* Color del texto */
+    
+    
+} 
+
+   
