@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales | Turismo Argentina</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/93bb252cb1.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+   <!-- Navbar -->
+   <header>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/mundo (1).png" alt="Logo Argentina" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-black" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="experiencias-galeria.html">Experiencias</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="sobre.nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-black active fw-bold" href="sucursales.html">Sucursales</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  
+
+
+
+<main class="container my-5 py-4">
+    <section class="text-center sucursales-section bg-light p-5 rounded shadow">
+        <h1 class="fw-bold text-dark">Nos podés encontrar en:</h1>
+        <h3 class="mt-4 text-primary">Av. Dorrego 1771</h3>
+        <p class="text-muted fs-5 text-uppercase">Palermo Hollywood | CABA, Buenos Aires, Argentina</p>
+
+        <!-- Contenedor del mapa mejorado -->
+        <div class="map-container mt-4">
+            <iframe 
+                class="mapa-redondeado"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9003203278726!2d-58.44546262445942!3d-34.58138867296226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5ec8cab88a7%3A0xa56a75377a2c951e!2sAv.%20Dorrego%201771%2C%20C1414CKM%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1737652484738!5m2!1ses-419!2sar" 
+                width="100%" 
+                height="350" 
+                allowfullscreen 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+</main>
+
+
+
+
+   
+     <!-- 🔹 Sección de Newsletter -->
+     <section class="newsletter-section py-5">
+        <div class="container text-center">
+            <h3 class="mb-3 fw-bold">Suscríbete a nuestro Newsletter</h3>
+            <p class="mb-3">Recibirás noticias y promociones de nuestras aventuras y eventos.</p>
+            <form class="row justify-content-center g-2">
+                <div class="col-md-4 col-8">
+                    <input type="email" class="form-control p-2" placeholder="Ingresa tu email" required>
+                </div>
+                <div class="col-md-2 col-4">
+                    <button type="submit" class="btn newsletter-btn w-100 fw-bold">Registrarme</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+  <!-- Footer -->
+<footer class="footer-section py-4">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- Logo y descripción -->
+            <div class="col-md-4">
+                <h5 class="fw-bold">Turismo.AR</h5>
+                <p>Descubre los secretos mejor guardados del país.</p>
+            </div>
+            
+            <!-- Contacto -->
+            <div class="col-md-4">
+                <h5 class="fw-bold">Contáctanos</h5>
+                <p>Email: <a href="mailto:argentina@gmail.com" class="footer-link">argentina@gmail.com</a></p>
+                <p>Dirección: Av. Dorrego, Argentina</p>
+                <p>Tel: <a href="tel:+541112345678" class="footer-link">+54 11 1234-5678</a></p>
+            </div>
+            
+            <!-- Redes Sociales -->
+            <div class="col-md-4 text-md-end text-center">
+                <h5 class="fw-bold">Nuestras Redes</h5>
+                <div class="mt-3 d-flex justify-content-center justify-content-md-end">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Derechos de autor -->
+        <div class="text-center mt-3">
+            <p class="mb-0">© 2025 Turismo.AR | 
+                <a href="#" class="footer-link">Política de Privacidad</a> | 
+                <a href="#" class="footer-link">Términos de Uso</a>
+            </p>
+        </div>
+    </div>
+</footer>
+    
+        <!-- Bootstrap JS -->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
