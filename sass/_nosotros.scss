@@ -1,0 +1,28 @@
+
+.nosotros-section {
+  background: url('../assets/img/nosotros.jpg') center/cover fixed no-repeat;
+  width: 100%;
+  min-height: 120vh;
+  position: relative;
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 80px 0 100px;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    color: $color-white;
+  }
+
+  .text-white-50 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .bg-opacity-75 {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+}

@@ -1,0 +1,53 @@
+// === Tipografías ===
+$font-base: 'Poppins', sans-serif;
+$font-headings: 'Montserrat', serif;
+
+// === Colores ===
+$color-primary: #4A90A2;
+$color-primary-dark: #3E788D;
+$color-secondary: #627D77;
+$color-accent: #008CBA;
+$color-accent-dark: #006F98;
+$color-beige: #F5E3C3;
+$color-beige-dark: #E3D1B8;
+$color-text: #555;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-muted: rgba(0, 0, 0, 0.6);
+$color-overlay: rgba(0, 0, 0, 0.4);
+$color-text-white-50: rgba(255, 255, 255, 0.8);
+
+// === Verde personalizado para botones o acentos
+$color-green: #007f6b;
+$color-green-dark: #005e50;
+
+// === Sombras y bordes
+$box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+$box-shadow-hover: 0 8px 18px rgba(0, 0, 0, 0.15);
+$radius: 12px;
+
+$tamanio-espaciado-corto:20px;
+
+$flexbox-alineacion:(
+    "centro":center
+)
+
+
+$layout: (
+  navbar-padding: 15px 0,
+  hero-height: 100vh,
+  hero-spacing: 20px,
+  hero-heading-size: 3rem,
+  hero-heading-size-sm: 2rem,        //  nuevo
+  hero-paragraph-size: 1.2rem,
+  hero-paragraph-size-sm: 1rem,      // nuevo
+  button-radius: 12px,
+  button-padding: (12px 25px)
+);
+
+
+
+    
+
+
+
