@@ -25,7 +25,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link text-black" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link text-black " href="experiencias-galeria.html">Experiencias</a></li>
-                        <li class="nav-item"><a class="nav-link text-black" href="sobre.nosotros.html">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="sobre-nosotros.html">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link text-black active fw-bold" href="contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link text-black" href="sucursales.html">Sucursales</a></li>
                     </ul>
@@ -36,36 +36,37 @@
     </header>
     
     <main class="container my-5 py-4">
-        <section class="form-contacto text-center">
-          <h1 class="fw-bold text-dark mb-4">¡Dejanos tu mensaje!</h1>
-          <p class="text-muted mb-4">Completá el siguiente formulario y nos pondremos en contacto con vos.</p>
-      
-          <form>
-            <div class="mb-3 text-start">
-              <label for="nombre" class="form-label">Nombre completo</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
-            </div>
-      
-            <div class="mb-3 text-start">
-              <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="email" placeholder="tunombre@email.com">
-            </div>
-      
-            <div class="mb-3 text-start">
-              <label for="asunto" class="form-label">Asunto</label>
-              <input type="text" class="form-control" id="asunto" placeholder="Motivo de tu mensaje">
-            </div>
-      
-            <div class="mb-4 text-start">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..."></textarea>
-            </div>
-      
-            <button type="submit" class="btn btn-dark w-100">Enviar mensaje</button>
-          </form>
-        </section>
-      </main>
-      
+      <section class="form-contacto text-center">
+        <h1 class="fw-bold text-dark mb-4">¡Dejanos tu mensaje!</h1>
+        <p class="text-muted mb-4">Completá el siguiente formulario y nos pondremos en contacto con vos.</p>
+    
+        <form>
+          <!-- Inputs -->
+          <div class="mb-3 text-start">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="tunombre@email.com">
+          </div>
+          <div class="mb-3 text-start">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="asunto" placeholder="Motivo de tu mensaje">
+          </div>
+          <div class="mb-4 text-start">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..."></textarea>
+          </div>
+        </form>
+    
+        <!-- Botón afuera -->
+        <div class="text-center">
+          <button class="btn btn-enviar">Enviar mensaje</button>
+        </div>
+      </section>
+    </main>
+    
           
       
       
@@ -89,46 +90,60 @@
         </div>
       </section>
       
-
-<!-- Footer -->
+      <!-- Footer -->
 <footer class="footer-section py-4">
-    <div class="container text-center text-md-start">
-        <div class="row">
-            <!-- Logo y descripción -->
-            <div class="col-md-4">
-                <h5 class="fw-bold">Turismo.AR</h5>
-                <p>Descubre los secretos mejor guardados del país.</p>
-            </div>
-            
-            <!-- Contacto -->
-            <div class="col-md-4">
-                <h5 class="fw-bold">Contáctanos</h5>
-                <p>Email: <a href="mailto:argentina@gmail.com" class="footer-link">argentina@gmail.com</a></p>
-                <p>Dirección: Av. Dorrego, Argentina</p>
-                <p>Tel: <a href="tel:+541112345678" class="footer-link">+54 11 1234-5678</a></p>
-            </div>
-            
-            <!-- Redes Sociales -->
-            <div class="col-md-4 text-md-end text-center">
-                <h5 class="fw-bold">Nuestras Redes</h5>
-                <div class="mt-3 d-flex justify-content-center justify-content-md-end">
-                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
+  <div class="container text-center text-md-start">
+    <div class="row gy-4">
+      
+      <!-- Columna 1: Marca -->
+      <div class="col-md-4">
+        <h5 class="fw-bold">Turismo.AR</h5>
+        <p>Descubre los secretos mejor guardados del país.</p>
+      </div>
+
+      <!-- Columna 2: Contacto -->
+      <div class="col-md-4">
+        <h5 class="fw-bold">Contáctanos</h5>
+        <p>Email: <a href="mailto:argentina@gmail.com" class="footer-link">argentina@gmail.com</a></p>
+        <p>Dirección: Av. Dorrego, Argentina</p>
+        <p>Tel: <a href="tel:+541112345678" class="footer-link">+54 11 1234-5678</a></p>
+      </div>
+
+      <!-- Columna 3: Redes Sociales -->
+      <div class="col-md-4 text-center">
+        <h5 class="fw-bold">Nuestras Redes</h5>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://facebook.com" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://tiktok.com" class="social-icon" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://wa.me/541234567" class="social-icon" aria-label="Whatsapp" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
-        
-        <!-- Derechos de autor -->
-        <div class="text-center mt-3">
-            <p class="mb-0">© 2025 Turismo.AR | 
-                <a href="#" class="footer-link">Política de Privacidad</a> | 
-                <a href="#" class="footer-link">Términos de Uso</a>
-            </p>
-        </div>
+      </div>
+
     </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-4">
+      <p class="mb-0">© 2025 Turismo.AR |
+        <a href="#" class="footer-link">Política de Privacidad</a> |
+        <a href="#" class="footer-link">Términos de Uso</a>
+      </p>
+    </div>
+  </div>
 </footer>
+
+
 
    
 

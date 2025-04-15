@@ -1,0 +1,67 @@
+.form-contacto {
+  max-width: 500px;
+  background: transparent;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 100px;
+
+  h1, p {
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 0;
+
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+      color: $color-dark;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 2px solid $color-muted;
+      border-radius: 0;
+      padding: 10px 5px;
+      font-size: 1rem;
+      background-color: transparent;
+      color: $color-black;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: $color-accent;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    textarea.form-control {
+      resize: none;
+      min-height: 140px;
+    }
+
+    // Quitamos el botón de acá
+    .btn {
+      display: none;
+    }
+  }
+}
+
+// Nuevo botón afuera del form
+.btn-enviar {
+  background-color: $color-accent;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color-accent-dark;
+  }
+}

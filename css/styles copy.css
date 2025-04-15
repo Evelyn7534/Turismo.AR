@@ -399,30 +399,78 @@ h1, h2 , h3{
     background-color: #3E788D; /* Azul Patagonia oscuro */
 }
 
+/* === Sección Nosotros === */
 .nosotros-section {
-    background-image: url('../assets/img/nosotros.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    width: 100%;
-    min-height: 120vh;
-    position: relative;
-  
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(4px);
-      padding-top: 80px;
-      padding-bottom: 100px; 
-      min-height: inherit;
-      display: flex;
-      align-items: center;
-    }
-  
+  background-color: white;
+  padding-top: 100px; // espacio para la navbar fija
+  min-height: 100vh;
+
+  h1 {
+    color: #0b0b0b;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Imagen parallax derecha */
+.imagen-nosotros-parallax {
+  background-image: url('../assets/img/nosotrosnwimg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 110vh;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .nosotros-section {
+    padding-top: 90px;
+
     h1 {
-      color: white;
+      font-size: 26px;
+      text-align: center;
     }
-  
+
+    h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .col-md-6 {
+      padding: 0 1rem;
+    }
+  }
+
+  .imagen-nosotros-parallax {
+    background-attachment: scroll;
+    min-height: 60vh;
+  }
+}
+
+
+
     .text-white-50 {
       color: rgba(255, 255, 255, 0.8);
     }
@@ -430,5 +478,5 @@ h1, h2 , h3{
     .bg-opacity-75 {
       background-color: rgba(255, 255, 255, 0.75);
     }
-  }
+  
   

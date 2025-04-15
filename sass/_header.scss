@@ -1,0 +1,33 @@
+/* === Navbar === */
+.navbar-nav {
+  margin: 0 auto;
+
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .nav-link {
+    color: $color-muted;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+
+    &.active,
+    &:hover {
+      color: $color-black;
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  // Solo en pantallas grandes (desktop) usá flexbox horizontal
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
