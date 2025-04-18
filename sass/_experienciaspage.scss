@@ -1,0 +1,52 @@
+.page-experiencias {
+    padding-bottom: 60px;
+  
+    .experienciaS-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: $box-shadow;
+      transition: transform 0.3s ease, box-shadow $box-shadow;
+  
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: $box-shadow-hover;
+      }
+  
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+  
+    .card-text {
+      font-size: 0.95rem;
+      color: $color-text;
+      margin-bottom: 1rem;
+    }
+  
+    .btn-custom {
+      margin: auto;
+      font-weight: 600;
+      color: $color-green;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: $color-green;
+      width: fit-content;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        color: $color-green-dark;
+        border-color: $color-green-dark;
+      }
+    }
+  }
+ 

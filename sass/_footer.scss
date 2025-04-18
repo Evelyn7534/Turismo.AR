@@ -1,0 +1,99 @@
+/* === Footer === */
+.footer-section {
+    background-color: $color-secondary;
+    color: $color-white;
+    font-family: $font-base;
+    padding: 2rem 0;
+  
+    h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    p,
+    .footer-link {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: $color-white;
+        text-decoration: underline;
+      }
+    }
+  
+    .social-icon {
+      font-size: 1.5rem;
+      color: $color-white;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: lighten($color-white, 10%);
+      }
+    }
+  
+    .container {
+      .row {
+        .col-md-4 {
+          &:first-child {
+            // logo y descripción
+          }
+  
+          &:nth-child(2) {
+            // contacto
+          }
+  
+          &:last-child {
+            text-align: center;
+  
+            @media (min-width: 768px) {
+              text-align: end;
+            }
+  
+            .social-icon {
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+      .fa-whatsapp {
+        color: $color-wsp; // Definí este color en tu archivo de variables
+        font-size: 3rem;
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+        z-index: 999;
+      }
+      
+  
+      .text-center {
+        margin-top: 1rem;
+  
+        p {
+          margin: 0;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+  /* === Newsletter === */
+.newsletter-section {
+    background-color:$color-secondary;
+    padding: 60px 0;
+    color: #ffffff;
+  
+    .newsletter-btn {
+      background-color: $color-beige;
+      color: #627D77;
+      border: none;
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: $color-beige-dark;
+      }
+    }
+  }
+  
