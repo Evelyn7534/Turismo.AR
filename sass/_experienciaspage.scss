@@ -1,52 +1,74 @@
 .page-experiencias {
-    padding-bottom: 60px;
-  
-    .experienciaS-card {
-      border: none;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: $box-shadow;
-      transition: transform 0.3s ease, box-shadow $box-shadow;
-  
-      &:hover {
-        transform: translateY(-6px);
-        box-shadow: $box-shadow-hover;
-      }
-  
-      .card-body {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-      }
+  padding-bottom: 60px;
+
+  .experienciaS-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: $box-shadow-hover;
     }
-  
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+
     .card-title {
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 0.5rem;
+      min-height: 3rem;
     }
-  
+
     .card-text {
       font-size: 0.95rem;
       color: $color-text;
       margin-bottom: 1rem;
     }
-  
+
     .btn-custom {
       margin: auto;
       font-weight: 600;
       color: $color-green;
       text-transform: uppercase;
       text-decoration: none;
-      border-bottom: $color-green;
+      border-bottom: 2px solid $color-green;
       width: fit-content;
       transition: all 0.3s ease;
-  
+      min-height: 40px;
+
       &:hover {
         color: $color-green-dark;
         border-color: $color-green-dark;
       }
+
+      &:focus {
+        outline: 2px dashed $color-green-dark;
+        outline-offset: 3px;
+      }
     }
   }
- 
+
+  @media (max-width: 768px) {
+    .experienciaS-card {
+      .card-title {
+        font-size: 1rem;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+      }
+
+      .btn-custom {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

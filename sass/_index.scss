@@ -15,49 +15,46 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../assets/img/guanaco-lama-guanicoe-torres-del-paine-national-park.jpg') center/cover no-repeat;
-    background-attachment: scroll; // valor seguro por defecto
+    background: url('../assets/img/guanaco-lama-guanicoe-torres-del-paine-national-park.jpg') center/cover no-repeat fixed;
     z-index: 0;
 
-    @media (min-width: 1024px) {
-      background-attachment: fixed; // se activa solo en desktop
+    @media (max-width: 768px) {
+      background-attachment: scroll; // Mejora para móvil
     }
   }
 
   .hero-overlay {
-    background-color: $color-overlay;
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
 
   .hero-content {
     position: relative;
     z-index: 2;
-    padding: $tamanio-espaciado-corto;
+    padding: 1.5rem;
     min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
       line-height: 1.3;
-    }
-  
-    p {
-      font-size: 1.2rem;
-      margin-bottom: $tamanio-espaciado-corto;
-    }
-  
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.8rem;
-        padding: 0 1rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 1.2;
       }
-  
-      p {
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 768px) {
         font-size: 1rem;
       }
     }
@@ -77,6 +74,7 @@
     }
   }
 }
+
 
 
 /* === Experiencias === */
