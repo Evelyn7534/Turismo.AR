@@ -9,19 +9,21 @@
   .nav-link {
     color: $color-muted;
     font-weight: 500;
+    font-size: 1rem;
     transition: color 0.3s ease-in-out;
 
-    &.active,
-    &:hover {
-      color: $color-black;
+    &:hover,
+    &.active {
+      color: $color-principal; // Podés usar #5E7A71 o tu verde marca
     }
 
     &.active {
-      font-weight: bold;
+      font-weight: 700;
+      text-decoration: underline;
     }
   }
 
-  // Solo en pantallas grandes (desktop) usá flexbox horizontal
+  // Estilo horizontal solo en pantallas grandes
   @media (min-width: 992px) {
     display: flex;
     justify-content: center;
@@ -29,5 +31,16 @@
   }
 }
 
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    .nav-item {
+      margin-bottom: 1rem;
+    }
 
-
+    .nav-link {
+      font-size: 1.05rem;
+      padding: 0.75rem 1rem;
+    }
+  }
+}

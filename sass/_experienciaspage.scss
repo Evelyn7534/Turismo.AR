@@ -66,9 +66,25 @@
         font-size: 0.9rem;
       }
 
-      .btn-custom {
-        font-size: 0.875rem;
+      @media (hover: hover) {
+        .btn-custom:hover {
+          transform: scale(1.03);
+        }
       }
+      
     }
   }
+}
+.faq-section {
+  background-color: $color-fondo; // en vez de #f9f9f9
+  box-shadow: $box-shadow; // en vez de rgba...
+  h2 { color: $color-texto; }
+  h3 { color: $color-texto; }
+  p { color: $color-muted; } // podés definir este tono como gris suave
+}
+
+
+  .faq-item {
+    margin-bottom: 2rem;
+
 }

@@ -15,13 +15,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../assets/img/guanaco-lama-guanicoe-torres-del-paine-national-park.jpg') center/cover no-repeat fixed;
+    background: url('../assets/img/guanaco-lama-guanicoe-torres-del-paine-national-park.webp') center/cover no-repeat fixed;
     z-index: 0;
 
     @media (max-width: 768px) {
       background-attachment: scroll; // Mejora para móvil
     }
   }
+  
 
   .hero-overlay {
     background-color: rgba(0, 0, 0, 0.4);
@@ -61,30 +62,68 @@
   }
 
   .btn-primary {
-    padding: 12px 25px;
+    padding: 0.75rem 2rem;
     font-size: 1rem;
-    border-radius: 12px;
-    background-color: $color-accent;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    background-color: $color-accent; // #F9C74F (amarillo cálido)
     color: $color-white;
     border: none;
-    transition: 0.3s;
-
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: capitalize;
+  
     &:hover {
-      background-color: $color-accent-dark;
+      background-color: $color-principal; // ej: #5E7A71 o algo más oscuro
+      transform: translateY(-2px);
     }
-  }
-}
+  }}
+  
 
 
 
-/* === Experiencias === */
-.experiencia-img,
-.page-experiencias .experienciaS-card .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
+  .page-experiencias {
+    .experienciaS-card {
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+      background-color: $color-blanco;
+  
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+      }
+  
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+      }
+  
+      .card-body {
+        padding: 1rem 1.2rem;
+  
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: $color-texto;
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          color: #666;
+          font-size: 0.95rem;
+          line-height: 1.5;
+          margin-bottom: 1rem;
+        }
+  
+        
+        }
+      }
+    }
+  
+  
 
 .testimonios-section {
   min-height: 600px;
@@ -92,11 +131,14 @@
 
   h2 {
     font-size: 2rem;
-    margin-bottom: $tamanio-espaciado-corto;
+    font-weight: 700;
+    color: $color-texto;
   }
 
   p {
-    margin-bottom: 40px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
   }
 }
 
@@ -139,32 +181,117 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* === Video Section === */
 .video-section {
-  background-color: #f8f9fa;
-  padding: 80px 0;
-  border-radius: 10px;
+  background-color: $color-fondo; // tu tono arena claro
+  padding: 5rem 1.5rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-texto;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.6;
+  }
 
   .ratio iframe {
-    border-radius: 20px;
+    border-radius: 1.25rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   }
 }
 
-/* === Newsletter === */
-.newsletter-section {
-  background-color: $color-secondary;
-  padding: 60px 0;
-  color: #ffffff;
 
-  .newsletter-btn {
-    background-color: $color-beige;
-    color: #627D77;
-    border: none;
-    transition: all 0.3s ease-in-out;
+.newsletter-section {
+  background-color: $color-principal; // verde mate
+  color: $color-blanco;
+  padding: 5rem 1rem;
+  text-align: center;
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    input[type="email"] {
+      padding: 0.75rem 1.25rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 350px;
+      margin-right: 0.5rem;
+    }
+
+    .newsletter-btn {
+      background-color: $color-accent; // amarillo
+      color: $color-texto;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($color-accent, 10%);
+      }
+    }
+  }
+}
+.footer-section {
+  background-color: $color-principal;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 3rem 1rem;
+
+  h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  p, a {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 
     &:hover {
-      background-color: $color-beige-dark;
+      color: $color-blanco;
+      text-decoration: underline;
     }
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: $color-blanco;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 

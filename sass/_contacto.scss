@@ -1,23 +1,24 @@
+/* === Formulario de Contacto === */
 .form-contacto {
   max-width: 500px;
   background: transparent;
   margin: 0 auto;
-  padding: 0;
   padding-top: 100px;
 
   h1, p {
     margin-bottom: 1.5rem;
+    color: $color-texto;
   }
 
   form {
     background-color: transparent;
     padding: 2rem;
-    border-radius: 0;
 
     label {
       font-weight: bold;
       margin-top: 1rem;
       display: block;
+      font-size: 0.95rem;
       color: $color-dark;
     }
 
@@ -38,22 +39,27 @@
       }
     }
 
+    input:-webkit-autofill {
+      box-shadow: 0 0 0 1000px transparent inset !important;
+      -webkit-text-fill-color: $color-black !important;
+    }
+
     textarea.form-control {
       resize: none;
       min-height: 140px;
+      line-height: 1.6;
     }
 
-    // Quitamos el botón de acá
     .btn {
       display: none;
     }
   }
 }
 
-// Nuevo botón afuera del form
+/* === Botón Enviar === */
 .btn-enviar {
   background-color: $color-accent;
-  color: white;
+  color: $color-white;
   font-size: 1rem;
   padding: 12px 30px;
   border: none;

@@ -2,26 +2,33 @@
 $font-base: 'Poppins', sans-serif;
 $font-headings: 'Montserrat', serif;
 
-// === Colores ===
-$color-primary: #4A90A2;
-$color-primary-dark: #3E788D;
-$color-secondary: #627D77;
-$color-accent: #008CBA;
-$color-accent-dark: #006F98;
-$color-beige: #F5E3C3;
-$color-beige-dark: #E3D1B8;
-$color-text: #555;
+// === Colores básicos ===
 $color-white: #ffffff;
 $color-black: #000000;
+$color-dark: #333;
 $color-muted: rgba(0, 0, 0, 0.6);
+$color-text: #2F4F4F; // Color principal para textos oscuros
+
+// === Colores de marca / UI ===
+$color-primary: #5E7A71; // Verde mate (nuevo principal)
+$color-primary-dark: darken($color-primary, 10%);
+$color-secondary: #627D77; // Para footer, newsletter
+$color-accent: #F9C74F; // Amarillo cálido
+$color-accent-dark: darken($color-accent, 10%);
+$color-wsp: #25d366; // WhatsApp
+
+// === Fondos ===
+$color-fondo: #F8F5F1;
 $color-overlay: rgba(0, 0, 0, 0.4);
 $color-text-white-50: rgba(255, 255, 255, 0.8);
-$color-wsp: #25d366;
-$color-green: #007f6b;
-$color-green-dark: #005e50;
-$color-dark: #333; // o el color que quieras
 
-// === Sombras y bordes ===
+// === Botones antiguos / no usados (eliminados y reempleazados )
+$color-beige: null; // eliminado por reemplazo con $color-accent
+$color-beige-dark: null;
+$color-green: null;
+$color-green-dark: null;
+
+// === Sombra y bordes ===
 $box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 $box-shadow-hover: 0 8px 18px rgba(0, 0, 0, 0.15);
 $radius: 12px;
@@ -29,12 +36,12 @@ $radius: 12px;
 // === Espaciado ===
 $tamanio-espaciado-corto: 20px;
 
-// === Flexbox helpers ===
+// === Flexbox h ===
 $flexbox-alineacion: (
   "centro": center
 );
 
-// === Layout ===
+// === Layout  ===
 $layout: (
   navbar-padding: 15px 0,
   hero-height: 100vh,
@@ -46,6 +53,8 @@ $layout: (
   button-radius: 12px,
   button-padding: 12px 25px
 );
+
+// === Text Align Map (opcional) ===
 $alineacion-texto: (
   centro: center,
   izquierda: left,
