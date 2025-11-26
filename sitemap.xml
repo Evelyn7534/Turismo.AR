@@ -1,8 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://experienciasargentina.netlify.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://experienciasargentina.netlify.app/pages/experiencias-galeria.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://experienciasargentina.netlify.app/pages/sobre-nosotros.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://experienciasargentina.netlify.app/pages/contacto.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://experienciasargentina.netlify.app/pages/sucursales.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-</urlset>
+<url>
+  <loc>https://vivirargentina.com/</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://vivirargentina.com/pages/experiencias-galeria.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://vivirargentina.com/pages/sobre-nosotros.html</loc>
+</url>
+<url>
+  <loc>https://vivirargentina.com/pages/contacto.html</loc>
+</url>
+<url>
+  <loc>https://vivirargentina.com/pages/sucursales.html</loc>
+</url>
